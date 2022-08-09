@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ppt07_2072029.controller.HelloController">
+   <left>
+      <VBox prefHeight="401.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea fx:id="txtFile" prefHeight="295.0" prefWidth="560.0">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="40.0" />
+               </VBox.margin>
+            </TextArea>
+            <HBox alignment="TOP_RIGHT" prefWidth="600.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#OnOpen" text="Open">
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#OnSaveAs" text="Save As">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#OnSave" text="Save">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets right="20.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+</BorderPane>
